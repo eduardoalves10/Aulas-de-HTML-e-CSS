@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech+</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <a class="header-especial" href="index.html"
+        rel="noopener">Tech+</a>
+
+        <nav>
+            <a href="index.html"
+            rel="noopener">
+            Início</a>
+
+            <a href="sobre.html"
+            rel="noopener">
+            Sobre</a>
+
+            <a href="contato.html"
+            rel="noopener"
+            class="ativo">
+            Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Entre em contato:</h2>
+            <form action="obrigado.html" target="_blank" rel="noopener" method="get">
+                <fieldset>
+                    <legend>Dados pessoais:</legend>
+                    <!-- Campos aqui -->
+                    <div class="campo">
+                        <label for="nome">Nome completo *</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required minlength="10">
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="nome" placeholder="Seu E-mail completo" required minlength="10">
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone">Telefone *</label>
+                        <input type="tel" id="telefone" name="nome" placeholder="(11) 99999-9999" required minlength="10">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Feedback:</legend>
+                    <!-- Campos aqui -->
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Escolha o seu feedback</option>
+                        <option value="casa">Positivo</option>
+                        <option value="apartamento">Negativo</option>
+                        <option value="geminada">Alguma melhoria</option>
+                    </select>
+
+                    <textarea id="mensagem" name="mensagem" rows="5" minlength="20" required
+                        placeholder="Descreva a sua opnião">
+                    </textarea>
+
+                    <div class="campo1">
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">
+                            Aceito os
+                            <a href="termos.html" target="_blank" rel="noopener">termos de uso</a>.
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="button-contato">
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>Horários de atendimento:</h2>
+            <table>
+                <caption>Horários de atendimento</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Dia</th>
+                        <th scope="col">Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Seg-Sex</td>
+                        <td>8h-18h</td>
+                    </tr>
+                    <tr>
+                        <td>Sab</td>
+                        <td>9h-13h</td>
+                    </tr>
+                    <tr>
+                        <td>Dom</td>
+                        <td>Fechado</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Feriados: Fechado</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Tech+</h3>
+            </div>
+            <div class="footer-col">
+                <h3>Links</h3>
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="footer-col">
+                <h3>Contato</h3>
+                <p><i class="fa-solid fa-phone"></i></p>
+                <p><i class="fa-solid fa-envelope"></i></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; Eduardo Nascimento Alves - 2026</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
