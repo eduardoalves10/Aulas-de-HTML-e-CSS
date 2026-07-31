@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <section class="hero">
+        <h1>Meu site</h1>
+        <p>Opa, sou o Eduardo</p>
+    </section>
+
+    <nav>
+        <a href="index.html" rel="noopener">
+            Início
+            <i class="fa-solid fa-house"></i></a>
+
+        <a href="contato.html" rel="noopener">
+            Contato
+            <i class="fa-solid fa-circle-user"></i></a>
+
+        <a href="index3.html" rel="noopener">
+            Informações
+            <i class="fa-solid fa-circle-info"></i></a>
+    </nav>
+
+    <main class="oi">
+        <form action="obrigado.html" target="_blank" rel="noopener" method="get">
+            <fieldset>
+                <legend>Dados pessoais:</legend>
+                <!-- Campos aqui -->
+                <div class="campo">
+                    <label for="nome">Nome completo *</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required minlength="10">
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="nome" placeholder="Seu E-mail completo" required minlength="10">
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone *</label>
+                    <input type="tel" id="telefone" name="nome" placeholder="(11) 99999-9999" required minlength="10">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mensagem:</legend>
+                <!-- Campos aqui -->
+                <select id="assunto" name="assunto" required>
+                    <option value="">Onde você prefere morar?</option>
+                    <option value="casa">Casa</option>
+                    <option value="apartamento">Apartamento</option>
+                    <option value="geminada">Geminada</option>
+                </select>
+
+                <textarea id="mensagem" name="mensagem" rows="5" minlength="20" required
+                    placeholder="Descreva como você gostaria que fosse a sua moradia">
+                </textarea>
+
+                <div class="campo1">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">
+                        Aceito os
+                        <a href="termos.html" target="_blank" rel="noopener">termos de uso</a>.
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="botoes">
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+
+        <table>
+            <caption>Horários de atendimento</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Dia</th>
+                    <th scope="col">Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Seg-Sex</td>
+                    <td>8h-18h</td>
+                </tr>
+                <tr>
+                    <td>Sab</td>
+                    <td>9h-13h</td>
+                </tr>
+                <tr>
+                    <td>Dom</td>
+                    <td>Fechado</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Feriados: Fechado</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <footer>
+        &copy; Eduardo Nascimento Alves - 2026
+    </footer>
+
+</body>
+
+</html>

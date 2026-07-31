@@ -1,0 +1,150 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root { /*varíaveis definidas*/
+    --cor-primaria: rgb(238, 122, 27);
+    --cor-secundaria: gray;
+    --cor-destaque: black;
+    --font-principal: arial;
+    --raio: 10px;
+    --sombra: 0 4px 12px rgba(0,0,0,.08);
+}
+
+body {
+    background: rgb(247, 244, 244);
+    font-family: var(--font-principal);
+    font-size: 20px;
+}
+
+header {
+    background: var(--cor-primaria);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 64px;
+    border: 2.5px solid black;
+    border-radius: 5px;
+}
+
+header h1 {
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: var(--raio);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background .2s;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,.15);
+}
+
+h2 {
+    font-weight: 700;
+    padding: 20px 0 20px 15px;
+    color: var(--cor-primaria);
+}
+
+ul { 
+    list-style: none; 
+    padding: 0 0 0 20px;
+}
+  
+ul li {
+  padding: 8px 0 8px 20px;
+  border-bottom: 1px solid #e2e8f0;
+  position: relative;
+}
+
+ul li::before {
+  content: "›";
+  color: var(--cor-primaria);
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(135deg var(--cor-primaria), var(--cor-secundaria));
+    color: rgb(0, 0, 0);
+}
+
+.hero-texto {
+    flex: 2;
+}
+
+.hero-icone {
+  flex: 1;
+  text-align: center;
+  font-size: 4rem;
+  opacity: 1;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.cards-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 220px;
+    max-width: 300px;
+    background: white;
+    border-radius: var(--raio);
+    padding: 20px;
+    box-shadow: var(--sombra);
+}
+
+.layout-2col {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.layout-2col .conteudo {
+    flex: 2;
+}
+
+.layout-2col .lateral {
+    flex: 1;
+}
+
+img {
+    margin: 20px 0 0 15px;
+    border: solid 3px var(--cor-primaria);
+    border-radius: var(--raio);
+    width: 10px;
+    height: 200px;
+}
+
+footer {
+    background: var(--cor-destaque);
+    padding: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}

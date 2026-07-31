@@ -1,0 +1,166 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*estilo do site todo*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.7;
+    color: black;
+}
+
+header {
+    /*estilo do cabeçalho*/
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    /*estilo da navegação*/
+    background-color: rgb(106, 142, 219);
+    padding: 9px 15px;
+    text-align: center;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+nav a {
+    /*estilo dos botões de navegação*/
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background .3s;
+}
+
+nav a:hover {
+    /*estilo da transição*/
+    background: rgba(248, 248, 248, 0.15);
+}
+
+main {
+    /*estilo do corpo*/
+    max-width: 800px;
+    margin: 15px 40px;
+}
+
+h2 {/*estilo dos subtítulos do site*/
+    font-size: 1.8rem;
+    font-weight: 70;
+    color: rgb(40, 77, 156);
+    padding: 5px 0 10px 0;
+}
+
+ul {
+    /*estilo alterado das linhas*/
+    list-style: none;
+}
+
+ul li {
+    /*estilo alterado das linhas*/
+    padding: 0 0 10px 35px;
+    position: relative;
+    color: #000000;
+}
+
+ul li::before {
+    /*estilo alterado das linhas*/
+    content: "›";
+    color: rgb(40, 77, 156);
+    position: absolute;
+    left: 20px;
+    font-weight: 700;
+}
+
+footer {
+    /*estilo do rodapé do site*/
+    background-color: rgb(195, 208, 219);
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+.nav1 a {
+    /*links de direcionamento*/
+    text-decoration: none;
+    padding: 0px;
+}
+
+.nav2 a {
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+figure img {
+    object-fit: cover;
+    width: 180px;
+}
+
+.capa1 {
+    overflow: hidden;
+    border-radius: 7px;
+    border: 3px solid rgb(40, 77, 156);
+    width: 300px;
+}
+
+.capa1 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero {
+    background-size: cover;
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('/imagens/perfil.jpg.jpg') center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.galeria figure {
+    overflow: hidden;
+    border-radius: 7px;
+    border: 3px solid rgb(40, 77, 156);
+}
+
+.galeria figure img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform .3s, opacity .3s;
+}
+
+.galeria figure:hover img {
+    transform: scale(1.01);
+    opacity: .90;
+}
+
+figcaption {
+    background-color: rgb(40, 77, 156);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 15px;
+}
